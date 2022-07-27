@@ -8,6 +8,7 @@ AR = ar
 LIBS = 
 SLIBS =
 LFLAGS =
+ARFLAGS = rcs
  
 ifdef DEBUG
 CFLAGS = -g -O0

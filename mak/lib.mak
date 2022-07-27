@@ -15,7 +15,7 @@ $(OBJDIR) :
 	mkdir $(OBJDIR)
 
 $(LIB) : $(OBJS)
-	$(AR) rcs $@ $(OBJS)
+	$(AR) $(ARFLAGS) $@ $(OBJS)
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.c
 	$(CC) $(CFLAGS) -o $@ $< -c
