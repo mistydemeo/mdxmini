@@ -16,7 +16,7 @@
 
 extern NLGCTX *nlgctx;
 
-#define MDXMINI_VERSION "2014-06-01"
+#define MDXMINI_VERSION "2022-07-26"
 
 int g_viewnote = 0;
 int g_verbose = 0;
@@ -556,12 +556,6 @@ int audio_main(int argc, char *argv[])
 
 	return 0;
 }
-
-
-// disable SDLmain for win32 console app
-#ifdef _WIN32
-#undef main
-#endif
 
 int main(int argc, char *argv[])
 {

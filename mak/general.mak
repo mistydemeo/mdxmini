@@ -27,7 +27,7 @@ endif
 # SDL stuff
 #
 
-SDL_CONFIG = sdl-config
+SDL_CONFIG = sdl2-config
 
 SDL_SLIBS  := `$(SDL_CONFIG) --static-libs`
 SDL_LIBS   := `$(SDL_CONFIG) --libs`
